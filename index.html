@@ -35,6 +35,31 @@
             width: 500px;
             height: 400px;
             display: inline-block;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        a {
+            position: relative;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #3498db;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        a:hover::after {
+            transform: scaleX(1);
         }
         footer {
             background: #333;
@@ -54,47 +79,47 @@
 
     <div class="container">
         <h2>Beginner Graphics</h2>
-        <a href="Cherries.png" download="Cherries.png">Cherries</a><br />
-        <a href="Potato.webp" download="Potato.webp">Potato</a><br />
-        <a href="Strawberry.png" download="Strawberry.png">Strawberry</a><br />
-        <a href="blueberries.png" download="blueberries.png">Blueberries</a><br />
-        <a href="brussels.png" download="brussels.png">Brussels</a><br />
-        <a href="carrot.png" download="carrot.png">Carrot</a><br />
-        <a href="cucumber.png" download="cucumber.png">Cucumber</a><br />
-        <a href="eggplant.webp" download="eggplant.webp">Eggplant</a><br />
-        <a href="greenapple.png" download="greenapple.png">Green Apples</a><br />
-        <a href="lemonslice.png" download="lemonslice.png">Lemon Slice</a><br />
-        <a href="lettuce.png" download="lettuce.png">Lettuce</a><br />
-        <a href="lime.png" download="lime.png">Lime</a><br />
-        <a href="limeslice.png" download="limeslice.png">Lime Slice</a><br />
-        <a href="orange.webp" download="orange.webp">Orange</a><br />
-        <a href="orangeslice.png" download="orangeslice.png">Orange Slice</a><br />
-        <a href="passionfruit.png" download="passionfruit.png">Passion Fruit</a><br />
-        <a href="pineapple.png" download="pineapple.png">Pineapple</a><br />
-        <a href="raspberry.png" download="raspberry.png">Raspberry</a><br />
-        <a href="redapple.png" download="redapple.png">Red Apple</a><br />
-        <a href="spinach.png" download="spinach.png">Spinach</a><br />
-        <a href="tomato.webp" download="tomato.webp">Tomato</a><br />
-        <a href="tomatoslice.png" download="tomatoslice.png">Tomato Slice</a><br />
-        <a href="watermelon.png" download="watermelon.png">Watermelon</a><br />
-        <a href="watermelonslice.png" download="watermelonslice.png">Watermelon Slice</a><br />
+        <a href="Cherries.png" download="Cherries.png">Cherries</a>
+        <a href="Potato.webp" download="Potato.webp">Potato</a>
+        <a href="Strawberry.png" download="Strawberry.png">Strawberry</a>
+        <a href="blueberries.png" download="blueberries.png">Blueberries</a>
+        <a href="brussels.png" download="brussels.png">Brussels</a>
+        <a href="carrot.png" download="carrot.png">Carrot</a>
+        <a href="cucumber.png" download="cucumber.png">Cucumber</a>
+        <a href="eggplant.webp" download="eggplant.webp">Eggplant</a>
+        <a href="greenapple.png" download="greenapple.png">Green Apples</a>
+        <a href="lemonslice.png" download="lemonslice.png">Lemon Slice</a>
+        <a href="lettuce.png" download="lettuce.png">Lettuce</a>
+        <a href="lime.png" download="lime.png">Lime</a>
+        <a href="limeslice.png" download="limeslice.png">Lime Slice</a>
+        <a href="orange.webp" download="orange.webp">Orange</a>
+        <a href="orangeslice.png" download="orangeslice.png">Orange Slice</a>
+        <a href="passionfruit.png" download="passionfruit.png">Passion Fruit</a>
+        <a href="pineapple.png" download="pineapple.png">Pineapple</a>
+        <a href="raspberry.png" download="raspberry.png">Raspberry</a>
+        <a href="redapple.png" download="redapple.png">Red Apple</a>
+        <a href="spinach.png" download="spinach.png">Spinach</a>
+        <a href="tomato.webp" download="tomato.webp">Tomato</a>
+        <a href="tomatoslice.png" download="tomatoslice.png">Tomato Slice</a>
+        <a href="watermelon.png" download="watermelon.png">Watermelon</a>
+        <a href="watermelonslice.png" download="watermelonslice.png">Watermelon Slice</a>
     </div>
 
     <div class="container">
         <h2>Intermediate Graphics</h2>
-        <a href="greybrickwall.jpg" download="greybrickwall.jpg">Grey Brick Wall</a><br />
-        <a href="paintdrip.png" download="paintdrip.png">Paint Drip</a><br />
-        <a href="redbrickwall.jpg" download="redbrickwall.jpg">Red Brick Wall</a><br />
-        <a href="splatter.webp" download="splatter.webp">Splatter</a><br />
+        <a href="greybrickwall.jpg" download="greybrickwall.jpg">Grey Brick Wall</a>
+        <a href="paintdrip.png" download="paintdrip.png">Paint Drip</a>
+        <a href="redbrickwall.jpg" download="redbrickwall.jpg">Red Brick Wall</a>
+        <a href="splatter.webp" download="splatter.webp">Splatter</a>
     </div>
 
     <br />
 
     <div class="container">
         <h2>Beginner Programming</h2>
-        <a href="snake.sprite3" download="snake.sprite3">Snake Sprite</a><br /><br />
-        <a href="bird.sprite3" download="bird.sprite3">Bird Sprite</a><br /><br />
-        <a href="pipes.sprite3" download="pipes.sprite3">Pipe Sprite</a><br /><br />
+        <a href="snake.sprite3" download="snake.sprite3">Snake Sprite</a><br />
+        <a href="bird.sprite3" download="bird.sprite3">Bird Sprite</a><br />
+        <a href="pipes.sprite3" download="pipes.sprite3">Pipe Sprite</a><br />
     </div>
 
     <footer>
